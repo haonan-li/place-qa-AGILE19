@@ -1,0 +1,77 @@
+[
+    {
+        "placeName": [],
+        "placeType": [
+            "country"
+        ],
+        "sentence": "countries frequently use geothermal energy",
+        "code": "to"
+    },
+    {
+        "placeName": [],
+        "placeType": [],
+        "sentence": "biggest macy's in the world",
+        "code": "oo"
+    },
+    {
+        "placeName": [
+            "spearfish creek"
+        ],
+        "placeType": [],
+        "sentence": "geography where does spearfish creek flow from",
+        "code": "1n"
+    },
+    {
+        "placeName": [],
+        "placeType": [],
+        "sentence": "define residence city",
+        "code": "tt"
+    },
+    {
+        "placeName": [],
+        "placeType": [],
+        "sentence": "golden state schedule 2015",
+        "code": "qtoo"
+    },
+    {
+        "placeName": [],
+        "placeType": [],
+        "sentence": "boehringer ingelheim corporate address",
+        "code": "o"
+    },
+    {
+        "placeName": [
+            "brea"
+        ],
+        "placeType": [],
+        "sentence": "brea is in what county",
+        "code": "n2t"
+    },
+    {
+        "placeName": [
+            "tigard"
+        ],
+        "placeType": [],
+        "sentence": "address clean water services tigard",
+        "code": "oon"
+    },
+    {
+        "placeName": [
+            "eisenberg",
+            "west virginia"
+        ],
+        "placeType": [],
+        "sentence": "address for daniel eisenberg of charleston, west virginia",
+        "code": "rnrn"
+    },
+    {
+        "placeName": [
+            "florida keys"
+        ],
+        "placeType": [
+            "island"
+        ],
+        "sentence": "the florida keys historic islands",
+        "code": "nqt"
+    }
+]

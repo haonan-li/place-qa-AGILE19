@@ -1,0 +1,56 @@
+united states u.s.
+alabama al
+alaska  ak
+american samoa  as
+arizona az
+arkansas    ar
+california  ca
+colorado    co
+connecticut ct
+delaware    de
+dist. of columbia   dc
+florida fl
+georgia ga
+guam    gu
+hawaii  hi
+idaho   id
+illinois    il
+iowa    ia
+kansas  ks
+kentucky    ky
+louisiana   la
+maryland    md
+marshall islands    mh
+massachusetts   ma
+michigan    mi
+micronesia  fm
+minnesota   mn
+mississippi ms
+missouri    mo
+montana mt
+nebraska    ne
+nevada  nv
+new hampshire   nh
+new jersey  nj
+new mexico  nm
+new york    ny
+north carolina  nc
+north dakota    nd
+northern marianas   mp
+ohio    oh
+palau   pw
+pennsylvania    pa
+puerto rico pr
+rhode island    ri
+south carolina  sc
+south dakota    sd
+tennessee   tn
+texas   tx
+utah    ut
+vermont vt
+virginia    va
+virgin islands  vi
+washington  wa
+west virginia   wv
+wisconsin   wi
+wyoming wy
