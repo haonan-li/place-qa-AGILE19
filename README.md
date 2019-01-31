@@ -27,7 +27,7 @@ python simple_end_to_end.py
 
 #### Requirement
 
-[Standford parser](https://nlp.stanford.edu/software/lex-parser.shtml)
+[Standford parser](https://nlp.stanford.edu/software/lex-parser.shtml): You need to download can configure it.
 
 [EMLo](https://allennlp.org/elmo)
 
@@ -35,7 +35,7 @@ python simple_end_to_end.py
 
 #### Running Code
 
-Run standford parser, parse the questions and answers, output in 10 columns conll format.
+Run standford parser, parse the questions and answers, output 10 columns conll format.
 
 ```
 python parse
@@ -49,31 +49,25 @@ python complex_encoding.py
 
 ### Clustering
 
-Two kinds of representations are used separately to do cluster: semantic encoding and contextual semantic embedding
+Two kinds of representations are used separately to do cluster: semantic encoding and contextual semantic embedding. To do contextual semantic embedding cluster, you need first generate contextual embedding using ```./generate_elmo_embedding.sh```.
 
-#### Semantic encoding clustering
-
-Code and result are in [code_cluster](cluster/code_cluster)
-
-#### Contextual semantic embedding cluster
-
-First generate contextual embedding
-
-```bash
-./generate_elmo_embedding.sh
-```
-
-Then do clustering
 
 ### Data
 
 code: encode results
+
 common_word: most commonly used words
+
 gazetteer: gazetteer and abbreviations
+
 place_type: place types
+
 prep: prepositions
+
 verb: action and stative verbs
+
 raw_data: raw dataset 
+
 result: results
 
 
