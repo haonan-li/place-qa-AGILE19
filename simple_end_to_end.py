@@ -92,6 +92,7 @@ def process_sentence(query,ga,abbr,pt_set,pt_dict,actv,stav,sp_prep):
 
     # expand abbreviation
     tokens = [abbr[token] if (token in abbr) else token for token in tokens]
+    tokens = ' '.joint(tokens).split(' ')
 
     # tagging
     query_len = len(tokens)
@@ -99,6 +100,7 @@ def process_sentence(query,ga,abbr,pt_set,pt_dict,actv,stav,sp_prep):
     tag = nltk.pos_tag(tokens)
 
     # place name (greedy match)
+    i = 0
     pname = []
     while i < query_len:
         for j in range(query_len,i,-1):
