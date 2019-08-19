@@ -11,7 +11,7 @@ pubs    pub
 overpasses  overpass
 aquaria aquarium
 aquariums aquarium
-airports    ariports
+airports    ariport
 cornors cornor
 highlands   highland
 roads   road
