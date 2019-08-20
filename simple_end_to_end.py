@@ -92,7 +92,7 @@ def process_sentence(query,ga,abbr,pt_set,pt_dict,actv,stav,sp_prep):
 
     # expand abbreviation
     tokens = [abbr[token] if (token in abbr) else token for token in tokens]
-    tokens = ' '.joint(tokens).split(' ')
+    tokens = ' '.join(tokens).split(' ')
 
     # tagging
     query_len = len(tokens)
