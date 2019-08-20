@@ -164,8 +164,8 @@ def process_sentence(query,ga,abbr,pt_set,pt_dict,actv,stav,sp_prep):
     for i,token in enumerate(tokens):
         # place quality
         if (code[i] == '.') and (tag[i][1] in ADJ_TAG) and (i+1<query_len) and (code[i+1] == 't'):
-             code[i] = 'q'
-             quality.append(token)
+            code[i] = 'q'
+            quality.append(token)
 
     code = re.sub('[\.,-]','',(''.join(code)))
 
