@@ -97,6 +97,8 @@ def process_sentence(query,ga,abbr,pt_set,pt_dict,actv,stav,sp_prep):
     # tagging
     query_len = len(tokens)
     code = ['.' for i in range(query_len)]
+    if query_len == 1:
+        tokens = ['<IGNORE>']
     tag = nltk.pos_tag(tokens)
 
     # place name (greedy match)
