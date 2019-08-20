@@ -230,3 +230,11 @@ woodlands   woodland
 yards   yard
 zones   zone
 mountains   mountain
+towers  tower
+rivers river
+forests forest
+spots   spot
+hospitals   hospital
+cafes   cafe
+universities    university
+churches    church
