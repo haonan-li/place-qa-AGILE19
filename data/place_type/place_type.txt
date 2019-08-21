@@ -238,3 +238,5 @@ hospitals   hospital
 cafes   cafe
 universities    university
 churches    church
+pharmacies  pharmacy
+shops   shop
