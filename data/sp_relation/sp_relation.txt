@@ -1,0 +1,33 @@
+to	to
+from	from
+of	of
+outside	out
+out	out
+out of	out
+in	in
+inside	in
+within	in
+located in	in
+included in	in
+cross	cross
+crosses	cross
+through	cross
+intersect	cross
+near	near
+nearby	near
+close to	near
+around	near
+border	border
+borders	border
+at the boundary of	border
+at the border of	border
+at the outskirts of	border
+north of	north of
+above of	north of
+south of	south of
+below	south of
+east of	east of
+to the right of	east of
+west of	west of
+to the left	west of
+between	between
