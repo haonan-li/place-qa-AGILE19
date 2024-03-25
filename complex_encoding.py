@@ -18,6 +18,7 @@ NO = set (['a','an','the','and','do','did','does','be','am','is','was','are','ca
 VERB_TAG = set(['VB','VBD','VBG','VBN','VBP','VBZ'])
 PREP_TAG = set(['IN','TO'])
 
+
 # load gazetteer in dictionary
 def load_gazetteer(fga):
     fga = open(fga,'r')
@@ -73,6 +74,33 @@ def filterr(ga, topn):
 def output(data,foutput):
     with open(foutput,'w') as f:
         json.dump(data,f,indent=4)
+
+fdata = 'data/raw_data/dataset-v2.1-location-queries.json'
+fga = 'data/gazetteer/gazetteer.txt'
+fabbr = 'data/gazetteer/abbr.txt'
+fcommon_word = 'data/common_word/top10000.txt'
+fpt = 'data/place_type/place_type.txt'
+factv = 'data/verb/action_verb.txt'
+fstav = 'data/verb/stative_verb.txt'
+foutput = 'data/result/result.json'
+fsp_prep = 'data/prep/prep.txt'
+
+# Load data
+pt_set,pt_dict = load_pt(fpt)
+actv = load_word(factv)
+stav = load_word(fstav)
+sp_prep = load_word(fsp_prep)
+data = load_data(fdata)
+abbr = load_abbr(fabbr)
+ga = load_gazetteer(fga)
+
+topn = load_word(fcommon_word)
+ga = filterr(ga,topn)
+
+# Verb Elmo representation
+actv_emb = elmo(batch_to_ids([[v] for v in actv]))['elmo_representations'][0].detach().numpy()
+stav_emb = elmo(batch_to_ids([[v] for v in stav]))['elmo_representations'][0].detach().numpy()
+
 
 class Token():
     def __init__(self,token):
@@ -193,33 +221,6 @@ class Sentence():
 
 
 def main():
-
-    fdata = 'data/raw_data/dataset-v2.1-location-queries.json'
-    fga = 'data/gazetteer/gazetteer.txt'
-    fabbr = 'data/gazetteer/abbr.txt'
-    fcommon_word = 'data/common_word/top10000.txt'
-    fpt = 'data/place_type/place_type.txt'
-    factv = 'data/verb/action_verb.txt'
-    fstav = 'data/verb/stative_verb.txt'
-    foutput = 'data/result/result.json'
-    fsp_prep = 'data/prep/prep.txt'
-
-    # Load data
-    pt_set,pt_dict = load_pt(fpt)
-    actv = load_word(factv)
-    stav = load_word(fstav)
-    sp_prep = load_word(fsp_prep)
-    data = load_data(fdata)
-    abbr = load_abbr(fabbr)
-    ga = load_gazetteer(fga)
-
-    topn = load_word(fcommon_word)
-    ga = filterr(ga,topn)
-
-    # Verb Elmo representation
-    actv_emb = elmo(batch_to_ids([[v] for v in actv]))['elmo_representations'][0].detach().numpy()
-    stav_emb = elmo(batch_to_ids([[v] for v in stav]))['elmo_representations'][0].detach().numpy()
-
 
     with open('data/result/parse_result','r') as f:
         parse = f.read()
