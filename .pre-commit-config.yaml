@@ -36,10 +36,11 @@ repos:
     hooks:
       - id: black
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.1.0
+    rev: v2.2.4
     hooks:
       - id: codespell
         exclude: >
           (?x)^(
-              .*\.json
+              .*\.json|.*\.ipynb
           )$
+        args: [--check-filenames, -L=fpt, '--ignore-regex=.{1024}|.*codespell-ignore.*']
