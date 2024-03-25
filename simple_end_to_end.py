@@ -19,7 +19,9 @@ PREP_TAG = set(['IN','TO'])
 def load_gazetteer(fga):
     fga = open(fga,'r'
                )
-    gazetteer = dict()
+    gazetteer = dict(
+
+    )
     for line in fga.readlines():
         line = line.strip()
         gazetteer[line.lower()] = line
