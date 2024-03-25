@@ -43,4 +43,3 @@ repos:
           (?x)^(
               .*\.json
           )$
-        args: [--check-filenames, --check-hidden, --ignore-words=ignore.txt]
