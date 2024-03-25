@@ -1,6 +1,5 @@
 import re
 import json
-import sys, time
 import sklearn
 from tqdm import tqdm
 from allennlp.modules.elmo import Elmo, batch_to_ids
