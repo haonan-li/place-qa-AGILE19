@@ -23,6 +23,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8
 
+    - name: Pre-Commit
+      uses: pre-commit/action@v3.0.0
+
     - name: Run flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
